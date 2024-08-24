@@ -1,0 +1,31 @@
+{
+  "name": "game-words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:add": "set NODE_ENV=add&& tsx watch src/index.ts",
+    "dev:play": "set NODE_ENV=play&& tsx watch src/index.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/src/index.js",
+    "start:add": "set NODE_ENV=add&& node dist/src/index.js",
+    "start:play": "set NODE_ENV=play&& node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.4",
+    "random-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
+}
